@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>AndroJS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+       <meta charset="utf-8" />
+      <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css' />
+        <!-- Подключаем стили -->
+        <link href="/css/data-main.css" rel="stylesheet" type="text/css" />
+        <link href="/css/monokai.css" rel="alternate stylesheet" title="monokai" type="text/css" />
+        <!-- Подключаем UserJS-->
+        <script type="text/javascript" src="styleswitcher.js"></script> 
+    </head>
+    <body onload="Anagram();" id="body">
+	<script src="Anagram.onLoad.js" charset="utf-8" type="text/javascript"></script>
+        <div class="header block logo">AndroJS</div>        
+        <div class="container">
+
+            <div class="column1 block">
+                <div id="tvWord">Анаграмма</div><br>
+                <input id="input" placeholder="Введи слово">
+                <a class="button" href="#" onclick="check()">Продолжить</a>
+                <a class="button" href="/rules/">Правила</a><br>
+                <input type="button" value="Settings" class="button" data-type="zoomin">
+                <div class="score" id="tvScores">Score: 0</div>
+                    <div class="overlay-container">
+                    <div class="window-container zoomin">
+                        <h3>Настройки</h3>
+                                <div align=center>
+                                    <p>Цветовая схема</p>
+                    <a href="#" class="modal-a" onclick="setActiveStyleSheet('style'); return false;">Стандарт</a> or
+                    <a href="#" class="modal-a" onclick="setActiveStyleSheet('monokai'); return false;">Monokai</a> <br/>
+                                    <p>Поделиться</p>
+                                    <div class="btn vk"><a href="http://vk.com/share.php?url=http://androjs.bb777.ru&title=AndroJS&description=Jigsaw by RF_Team (Beta)&noparse=true">VK</a></div>
+                                    <div class="btn fb"><a href="https://www.facebook.com/sharer/sharer.php?u=androjs.bb777.ru">FB</a></div>
+                                </div>
+                        <a href="/login/" class="login">Войти</a>
+                                    <span class="close">Закрыть</span>
+                    </div>
+                </div>
+        </div>
+
+        </div>
+        <div class="footer block">
+            <a href="/about/" target="_blank" class="cc">RedFraction Team</a> /
+            <a href="/updates/" target="_self">Updates</a>
+            <a id="ajs-logo" href="/about/">A</a>
+        </div>
+
+
+       	<script>!window.jQuery && document.write(unescape('%3Cscript src="jquery-1.7.1.min.js"%3E%3C/script%3E'))</script>
+	<script type="text/javascript" src="demo.js"></script>
+    </body>
+</html>
